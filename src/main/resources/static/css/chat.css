@@ -1,0 +1,218 @@
+*{
+    box-sizing:border-box;
+}
+.dnone{
+    display: none;
+}
+body{
+    background-image: url("data:image/svg+xml,%3Csvg width='48' height='48' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z' fill='%23456789' fill-opacity='0.25' fill-rule='evenodd'/%3E%3C/svg%3E");
+    background-color:#abd9e9;
+    font-family:Arial;
+}
+h2,h3{
+    margin:0;
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.main-container{
+    width:750px;
+    height:868px;
+    background:#eff3f7;
+    margin:0 auto;
+    font-size:0;
+    border-radius:5px;
+    overflow:hidden;
+}
+.chat-container{
+    width:100%;
+    height:800px;
+    display:inline-block;
+    font-size:15px;
+    vertical-align:top;
+    background-color: #eff3f7;
+}
+.header{
+    height:95px;
+    padding:30px 20px 30px 50px;
+}
+.header h2{
+    font-size:16px;
+    margin-bottom:5px;
+}
+.header a{
+    font-size:14px;
+    font-weight:normal;
+    color:#7e818a;
+}
+.status{
+    width:8px;
+    height:8px;
+    border-radius:50%;
+    display:inline-block;
+    margin-right:7px;
+}
+.mr0-ml7{
+    margin-right:0;
+    margin-left:7px;
+}
+.green{
+    background-color:#58b666;
+}
+.orange{
+    background-color:#ff725d;
+}
+.light-blue{
+    background-color:#6fbced;
+}
+.dark-blue{
+    background-color:#1f99e0;
+}
+#chat{
+    padding-left:0;
+    margin:0;
+    list-style-type:none;
+    overflow-y:scroll;
+    height:535px;
+    border-top:2px solid #abd9e9;
+    border-bottom:2px solid #abd9e9;
+}
+#chat li{
+    padding:10px 30px;
+}
+#chat h2,#chat h3{
+    display:inline-block;
+    font-size:13px;
+    font-weight:normal;
+}
+#chat h3{
+    margin-left: 5px;
+    margin-right: 5px;
+    color:#bbb;
+}
+#chat .info{
+    margin-bottom:5px;
+}
+#chat .message{
+    padding:20px;
+    color:#fff;
+    line-height:25px;
+    max-width:90%;
+    display:inline-block;
+    text-align:left;
+    border-radius:5px;
+}
+#chat .me{
+    text-align:right;
+}
+#chat .triangle{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+}
+.transparent-green{
+    border-color: transparent transparent #58b666 transparent;
+}
+.transparent-orange{
+    border-color: transparent transparent #ff725d transparent;
+}
+.transparent-light-blue{
+    border-color: transparent transparent #6fbced transparent;
+}
+.transparent-dark-blue{
+    border-color: transparent transparent #1f99e0 transparent;
+}
+#chat .other .triangle{
+    margin-left:15px;
+}
+#chat .me .triangle{
+    margin-left:640px;
+}
+.send-message{
+    height:155px;
+    padding:20px 30px 10px 20px;
+}
+.send-message textarea{
+    resize:none;
+    border:none;
+    display:block;
+    width:100%;
+    height:95px;
+    border-radius:3px;
+    padding:20px;
+    font-size:13px;
+    margin-bottom:13px;
+}
+.send-message textarea::placeholder{
+    color:#ddd;
+}
+.send-message input{
+    background: transparent;
+    text-decoration:none;
+    border-style: none;
+    text-transform:uppercase;
+    font-weight:bold;
+    color:#6fbced;
+    vertical-align:top;
+    margin-left:585px;
+    margin-top:5px;
+    display:inline-block;
+    cursor: pointer;
+}
+
+.send-message input:active{
+    color: #0d6efd;
+}
+
+.send-message input:hover{
+    color: #0d6efd;
+}
+
+.create-btn {
+    background: transparent;
+    text-decoration:none;
+    border-style: none;
+    text-transform:uppercase;
+    font-weight:bold;
+    color:#6fbced;
+    vertical-align:top;
+    margin-left:585px;
+    margin-top:5px;
+    display:inline-block;
+    cursor: pointer;
+}
+.create-btn:active{
+    color: #0d6efd;
+}
+
+.create-btn:hover{
+    color: #0d6efd;
+}
+
+#files{
+    color: gray;
+    font-size: 10px;
+    height: 55px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.delete-file-button{
+    cursor: pointer;
+    border: 0px solid #3498db;
+    background-color: transparent;
+}
+.error{
+    font-family:Consolas;
+    display: inline-block;
+    font-weight: bold;
+    color: red;
+    width: 350px;
+    word-wrap: break-word;
+}
+
+.stickerpack{
+    height: 98px;
+}
